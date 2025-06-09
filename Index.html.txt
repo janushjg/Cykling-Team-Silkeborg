@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team [NAVN] | U19 Cykelhold</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #002147;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #013369;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #014f86;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        h2 {
+            border-bottom: 2px solid #014f86;
+            padding-bottom: 10px;
+        }
+        .team-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .team-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sponsors img {
+            width: 150px;
+            height: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #014f86;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #013369;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Team [NAVN]</h1>
+        <p>U19 Talentudvikling i Dansk Cykling</p>
+    </header>
+
+    <nav>
+        <a href="#om">Om Os</a>
+        <a href="#ryttere">Ryttere</a>
+        <a href="#saeson">Sæson</a>
+        <a href="#sponsorer">Sponsorer</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="om">
+        <h2>Om Os</h2>
+        <p>Team [NAVN] er et dansk U19 cykelhold, der kombinerer talentudvikling, professionel træning og stærkt fællesskab. Vores mål er at udvikle unge ryttere på og udenfor landevejen, og hjælpe dem på vej mod en fremtid i elitesporten.</p>
+    </section>
+
+    <section id="ryttere">
+        <h2>Ryttere</h2>
+        <div class="team-gallery">
+            <img src="rytter1.jpg" alt="Rytter 1">
+            <img src="rytter2.jpg" alt="Rytter 2">
+            <img src="rytter3.jpg" alt="Rytter 3">
+            <!-- Flere ryttere kan tilføjes -->
+        </div>
+    </section>
+
+    <section id="saeson">
+        <h2>Sæson 2025</h2>
+        <p>Vores 2025 sæson inkluderer licensløb i hele Danmark samt udvalgte internationale løb i Holland og Tyskland. Vi deltager blandt andet i:</p>
+        <ul>
+            <li>DM U19</li>
+            <li>Randers Bike Week</li>
+            <li>Tour de Himmelfart</li>
+            <li>GP Herning Junior</li>
+        </ul>
+    </section>
+
+    <section id="sponsorer">
+        <h2>Sponsorer</h2>
+        <div class="sponsors">
+            <img src="sponsor1.png" alt="Sponsor 1">
+            <img src="sponsor2.png" alt="Sponsor 2">
+            <!-- Flere sponsorlogoer kan tilføjes -->
+        </div>
+        <p>Vil du være sponsor? <a href="mailto:sponsor@teamnavn.dk" style="color:#014f86; text-decoration: underline;">Kontakt os her</a>.</p>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form action="mailto:info@teamnavn.dk" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Dit navn" required>
+            <input type="email" name="email" placeholder="Din e-mail" required>
+            <textarea name="message" rows="5" placeholder="Din besked" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Team [NAVN] | Følg os på Instagram & Facebook</p>
+    </footer>
+
+</body>
+</html>
